@@ -12,6 +12,54 @@ body {
   line-height: 1.6;
   scroll-behavior: smooth;
 }
+.side-logo {
+  position: fixed;
+  top: 50%;
+  left: 0; /* Change to 'right: 0;' if you want it on the right side */
+  transform: translateY(-50%);
+  padding: 0.5rem;
+  z-index: 1000;
+}
+
+.side-logo img {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+/* Animated side logo */
+.side-logo {
+  position: fixed;
+  top: 50%;
+  left: -100px; /* Start off-screen */
+  transform: translateY(-50%);
+  animation: slideIn 1.5s ease-out forwards, pulse 3s infinite;
+  z-index: 1000;
+}
+
+.side-logo img {
+  width: 80px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  to {
+    left: 10px;
+  }
+}
+
+/* Gentle pulsing effect */
+@keyframes pulse {
+  0%, 100% {
+    transform: translateY(-50%) scale(1);
+  }
+  50% {
+    transform: translateY(-50%) scale(1.05);
+  }
+}
 
 /* Hero */
 .hero {
