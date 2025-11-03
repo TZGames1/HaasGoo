@@ -13,6 +13,7 @@ body {
   scroll-behavior: smooth;
 }
 .side-logo {
+  font-family: 'Poppins', Trebuchet MS;
   position: fixed;
   top: 50%;
   left: 0; /* Change to 'right: 0;' if you want it on the right side */
