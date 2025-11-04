@@ -1,3 +1,16 @@
+function toggleTheme() {
+  const body = document.body;
+  const icon = document.getElementById('theme-icon');
+
+  if (body.classList.contains('dark-mode')) {
+    body.classList.remove('dark-mode');
+    icon.textContent = '🌞';
+  } else {
+    body.classList.add('dark-mode');
+    icon.textContent = '🌙';
+  }
+}
+
 let cart = [];
 
 function addToCart(title, price) {
