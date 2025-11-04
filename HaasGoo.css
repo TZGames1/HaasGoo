@@ -71,8 +71,8 @@ body {
 
 /* Theme Toggle Button */
 .theme-toggle {
-  position: absolute;
-  top: 70px;
+  position: fixed;
+  top: 70px; /* Just below the navbar */
   left: 15px;
   width: 20px;
   height: 20px;
@@ -91,6 +91,7 @@ body {
 .theme-toggle:hover {
   background: rgba(255, 255, 255, 0.9);
 }
+
 /* Dark Mode */
 body.dark-mode {
   background: #111;
