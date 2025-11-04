@@ -39,19 +39,19 @@
         <img src="cover1.jpg" alt="Sam & Jack Part 1" />
         <h3>Sam & Jack Part 1</h3>
         <p class="price">3 papers</p>
-        <button onclick="addToCart('Sam & Jack Part 1', 3)">Add to Cart</button>
+        <button class="cart-button" onclick="addToCart('Sam & Jack Part 1', 3)">Add to Cart</button>
       </div>
       <div class="book-card">
         <img src="cover2.jpg" alt="Sam & Jack Part 2" />
         <h3>Sam & Jack Part 2</h3>
         <p class="price">3 papers</p>
-        <button onclick="addToCart('Sam & Jack Part 2', 3)">Add to Cart</button>
+        <button class="cart-button" onclick="addToCart('Sam & Jack Part 2', 3)">Add to Cart</button>
       </div>
       <div class="book-card">
         <img src="cover3.jpg" alt="Daniel the Hacker" />
         <h3>Daniel the Hacker</h3>
         <p class="price">TBD <span class="coming-soon">Coming Soon!</span></p>
-        <button disabled>Coming Soon</button>
+        <button class="cart-button" disabled>Coming Soon</button>
       </div>
     </div>
   </section>
@@ -82,7 +82,7 @@
     <p id="cart-total">Total: 0 papers</p>
     <form onsubmit="placeOrder(event)">
       <input type="text" id="buyer-name" placeholder="Your Name" required />
-      <button type="submit">Place Order</button>
+      <button type="submit" class="cart-button">Place Order</button>
     </form>
   </section>
 
@@ -103,6 +103,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
