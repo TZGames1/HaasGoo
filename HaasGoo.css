@@ -192,7 +192,6 @@ footer {
   left: 10px;
   transform: translateY(-50%);
   z-index: 1000;
-  animation: logoPulseRotate 3s infinite ease-in-out;
 }
 
 .side-logo img {
@@ -200,24 +199,25 @@ footer {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  animation: logoPulseRotate 3s infinite ease-in-out;
 }
 
 /* Combined animation: pulse + rotate */
 @keyframes logoPulseRotate {
   0% {
-    transform: translateY(-50%) scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
   }
   25% {
-    transform: translateY(-50%) scale(1.05) rotate(5deg);
+    transform: scale(1.05) rotate(5deg);
   }
   50% {
-    transform: translateY(-50%) scale(1.1) rotate(10deg);
+    transform: scale(1.1) rotate(10deg);
   }
   75% {
-    transform: translateY(-50%) scale(1.05) rotate(5deg);
+    transform: scale(1.05) rotate(5deg);
   }
   100% {
-    transform: translateY(-50%) scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
   }
 }
 
