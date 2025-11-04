@@ -44,21 +44,11 @@ body {
 }
 
 @keyframes logoMotion {
-  0% {
-    transform: scale(1) rotate(0deg);
-  }
-  25% {
-    transform: scale(1.05) rotate(5deg);
-  }
-  50% {
-    transform: scale(1.1) rotate(10deg);
-  }
-  75% {
-    transform: scale(1.05) rotate(5deg);
-  }
-  100% {
-    transform: scale(1) rotate(0deg);
-  }
+  0% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.05) rotate(5deg); }
+  50% { transform: scale(1.1) rotate(10deg); }
+  75% { transform: scale(1.05) rotate(5deg); }
+  100% { transform: scale(1) rotate(0deg); }
 }
 
 .nav-links {
@@ -152,10 +142,4 @@ h2 {
   transition: transform 0.3s ease;
 }
 
-.book-card:hover {
-  transform: scale(1.05);
-}
-
-.book-card img {
-  width: 100%;
-  border-radius: 8px
+.book
