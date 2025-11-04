@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HaasGoo Book Shop</title>
   <link rel="stylesheet" href="HaasGoo.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -16,6 +17,7 @@
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#books">Books</a></li>
+      <li><a href="#characters">Characters</a></li>
       <li><a href="#about">About</a></li>
     </ul>
   </nav>
@@ -37,13 +39,13 @@
         <img src="cover1.jpg" alt="Sam & Jack Part 1" />
         <h3>Sam & Jack Part 1</h3>
         <p class="price">3 papers</p>
-        <button>Add to Cart</button>
+        <button onclick="addToCart('Sam & Jack Part 1', 3)">Add to Cart</button>
       </div>
       <div class="book-card">
         <img src="cover2.jpg" alt="Sam & Jack Part 2" />
         <h3>Sam & Jack Part 2</h3>
         <p class="price">3 papers</p>
-        <button>Add to Cart</button>
+        <button onclick="addToCart('Sam & Jack Part 2', 3)">Add to Cart</button>
       </div>
       <div class="book-card">
         <img src="cover3.jpg" alt="Daniel the Hacker" />
@@ -52,6 +54,36 @@
         <button disabled>Coming Soon</button>
       </div>
     </div>
+  </section>
+
+  <!-- Characters Section -->
+  <section id="characters" class="section">
+    <h2>🎭 Meet the Characters</h2>
+    <div class="bio-grid">
+      <div class="bio-card">
+        <h3>Sam</h3>
+        <p>Curious, brave, and full of heart. Sam leads with emotion and loyalty.</p>
+      </div>
+      <div class="bio-card">
+        <h3>Jack</h3>
+        <p>Inventive and witty. Jack’s mind is a maze of ideas and justice.</p>
+      </div>
+      <div class="bio-card">
+        <h3>Daniel the Hacker</h3>
+        <p>A misunderstood genius seeking redemption through digital rebellion.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section id="cart" class="section">
+    <h2>🛒 Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="cart-total">Total: 0 papers</p>
+    <form onsubmit="placeOrder(event)">
+      <input type="text" id="buyer-name" placeholder="Your Name" required />
+      <button type="submit">Place Order</button>
+    </form>
   </section>
 
   <!-- About Section -->
