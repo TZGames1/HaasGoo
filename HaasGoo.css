@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Poppins', Trebuchet MS;
+  font-family: 'Poppins', sans-serif;
   background: #fefefe;
   color: #333;
   line-height: 1.6;
@@ -22,16 +22,45 @@ body {
   position: sticky;
   top: 0;
   z-index: 999;
-  background: linear-gradient(to right, rgba(255, 224, 178, 0.5), rgba(255, 204, 128, 0.5)); /* 50% transparent gradient */
+  background: linear-gradient(to right, rgba(255, 224, 178, 0.8), rgba(255, 204, 128, 0.8));
   border-radius: 0 0 12px 12px;
+  backdrop-filter: blur(6px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px); /* Optional: adds a frosted glass effect */
 }
 
 .nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 1.5rem;
   color: #333;
   font-weight: bold;
+}
+
+.logo-animated {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  animation: logoMotion 3s infinite ease-in-out;
+}
+
+/* Logo Animation */
+@keyframes logoMotion {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.05) rotate(5deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(10deg);
+  }
+  75% {
+    transform: scale(1.05) rotate(5deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
 }
 
 .nav-links {
@@ -160,22 +189,6 @@ h2 {
   font-weight: bold;
 }
 
-/* Character Bios */
-.bio-grid {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.bio-card {
-  background: #fff3e0;
-  padding: 1rem;
-  border-radius: 10px;
-  width: 250px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
 /* Footer */
 footer {
   text-align: center;
@@ -185,41 +198,3 @@ footer {
   margin-top: 2rem;
 }
 
-/* Insane Logo Animation */
-.side-logo {
-  position: fixed;
-  top: 50%;
-  left: 10px;
-  transform: translateY(-50%);
-  z-index: 1000;
-}
-
-.side-logo img {
-  width: 90px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
-  animation: logoPulseRotate 3s infinite ease-in-out;
-}
-
-/* Combined animation: pulse + rotate */
-@keyframes logoPulseRotate {
-  0% {
-    transform: scale(1) rotate(0deg);
-  }
-  25% {
-    transform: scale(1.05) rotate(5deg);
-  }
-  50% {
-    transform: scale(1.1) rotate(10deg);
-  }
-  75% {
-    transform: scale(1.05) rotate(5deg);
-  }
-  100% {
-    transform: scale(1) rotate(0deg);
-  }
-}
-
-/
-  background: #1976d
