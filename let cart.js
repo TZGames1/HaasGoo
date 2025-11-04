@@ -4,10 +4,10 @@ function toggleTheme() {
 
   if (body.classList.contains('dark-mode')) {
     body.classList.remove('dark-mode');
-    icon.textContent = '🌞';
+    icon.textContent = '🌙';
   } else {
     body.classList.add('dark-mode');
-    icon.textContent = '🌙';
+    icon.textContent = '🌞';
   }
 }
 
