@@ -69,6 +69,56 @@ body {
   color: #ff5722;
 }
 
+/* Theme Toggle Button */
+.theme-toggle {
+  position: absolute;
+  top: 70px;
+  left: 15px;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+/* Dark Mode */
+body.dark-mode {
+  background: #111;
+  color: #eee;
+}
+
+body.dark-mode .section,
+body.dark-mode .book-card,
+body.dark-mode .bio-card {
+  background: #222;
+  color: #eee;
+}
+
+body.dark-mode .navbar {
+  background: linear-gradient(to right, rgba(50, 50, 50, 0.8), rgba(30, 30, 30, 0.8));
+}
+
+body.dark-mode .cart-button,
+body.dark-mode .cta-button {
+  background: #444;
+  color: #fff;
+}
+
+body.dark-mode .cart-button:hover,
+body.dark-mode .cta-button:hover {
+  background: #666;
+}
+
 /* Hero Section */
 .hero {
   background: url('hero-bg.jpg') center/cover no-repeat;
