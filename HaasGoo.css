@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Trebuchet MS;
   background: #fefefe;
   color: #333;
   line-height: 1.6;
@@ -38,9 +38,9 @@ body {
 }
 
 .logo-animated {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  height: 48px; /* Scales proportionally to match text height */
+  width: auto;  /* Maintains aspect ratio */
+  border-radius: 8px;
   animation: logoMotion 3s infinite ease-in-out;
 }
 
