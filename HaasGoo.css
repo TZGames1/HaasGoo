@@ -22,9 +22,10 @@ body {
   position: sticky;
   top: 0;
   z-index: 999;
-  background: linear-gradient(to right, #ffe0b2, #ffcc80);
+  background: linear-gradient(to right, rgba(255, 224, 178, 0.5), rgba(255, 204, 128, 0.5)); /* 50% transparent gradient */
   border-radius: 0 0 12px 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px); /* Optional: adds a frosted glass effect */
 }
 
 .nav-brand {
